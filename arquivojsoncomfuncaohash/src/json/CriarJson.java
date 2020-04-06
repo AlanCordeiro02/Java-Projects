@@ -30,7 +30,7 @@ public class CriarJson {
 	public static void CriacaoJson() throws JarException {
 		ArquivoJson arquivo = new ArquivoJson();
 	    arquivo.setNumeroDeCasas(4);
-	    arquivo.setToken("SeuToken");
+	    arquivo.setToken("Token");
 	    arquivo.setCifrado("wmqtpmgmxc mw tviviuymwmxi jsv vipmefmpmxc. ihwkiv a. hmnowxve");
 	    arquivo.setDecifrado("simplicity is prerequisite for reliability. edsger w. dijkstra");
 	    String sha1 = getHash();
