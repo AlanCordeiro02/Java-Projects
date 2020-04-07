@@ -15,21 +15,6 @@ public class Carro {
 		this.preco = preco;
 		
 	}
-	public String getFabricante() {
-		return fabricante;
-	}
-	public String getModelo() {
-		return modelo;
-	}
-	public int getAno() {
-		return ano;
-	}
-	public String getCor() {
-		return cor;
-	}
-	public float getPreco() {
-		return preco;
-	}
 	
 	public String informacaoDoCarro() {
 		String aux = "Fabricante:" + fabricante
