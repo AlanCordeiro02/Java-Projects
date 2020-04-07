@@ -1,6 +1,8 @@
 package relictio;
 
-public class Silvano extends Relictio{
+import criature.Criatura;
+
+public class Silvano extends Criatura{
 
 	public Silvano(String classe, int ataque, int defesa, int forca, String terreno) {
 		super(classe, ataque, defesa, forca, terreno);

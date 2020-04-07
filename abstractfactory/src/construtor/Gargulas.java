@@ -1,6 +1,8 @@
 package construtor;
 
-public class Gargulas extends Construtor {
+import criature.Criatura;
+
+public class Gargulas extends Criatura {
 
 	public Gargulas(String classe, int ataque, int defesa, int forca, String terreno) {
 		super(classe, ataque, defesa, forca, terreno);

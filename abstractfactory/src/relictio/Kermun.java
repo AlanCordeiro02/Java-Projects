@@ -1,6 +1,8 @@
 package relictio;
 
-public class Kermun extends Relictio {
+import criature.Criatura;
+
+public class Kermun extends Criatura {
 
 	public Kermun(String classe, int ataque, int defesa, int forca, String terreno) {
 		super(classe, ataque, defesa, forca, terreno);

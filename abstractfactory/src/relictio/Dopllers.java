@@ -1,6 +1,8 @@
 package relictio;
 
-public class Dopllers extends Relictio {
+import criature.Criatura;
+
+public class Dopllers extends Criatura {
 
 	public Dopllers(String classe, int ataque, int defesa, int forca, String terreno) {
 		super(classe, ataque, defesa, forca, terreno);

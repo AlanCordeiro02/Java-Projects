@@ -16,25 +16,6 @@ public abstract class Criatura {
 		this.terreno = terreno;
 	}
 
-	public String getClasse() {
-		return classe;
-	}
-
-	public int getAtaque() {
-		return ataque;
-	}
-
-	public int getDefesa() {
-		return defesa;
-	}
-
-	public int getForca() {
-		return forca;
-	}
-
-	public String getTerreno() {
-		return terreno;
-	}
 	
 	public String infoMonster() {
 		String aux = "Classe: " + classe + ", " + 
