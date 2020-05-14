@@ -1,6 +1,6 @@
 package nucleo;
 
-import builder.BruxoBuilder;
+import builder.*;
 import gerente.BruxoGerente;
 import guerreiro.Bruxo;
 
@@ -10,8 +10,8 @@ public class Aplicacao {
 		// TODO Auto-generated method stub
 		BruxoGerente gerente = new BruxoGerente();
 		
-		gerente.BruxoInterface(new BruxoBuilder());
-		gerente.getBruxoEstudante();
+		gerente.BruxoInterface(new BruxoAltoNivelBuilder());
+		gerente.getBruxoAltoNivel();
 		
 		Bruxo bruxo = gerente.getBruxo();
 		

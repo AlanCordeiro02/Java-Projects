@@ -4,9 +4,9 @@ import equipamento.Colar;
 import equipamento.Equipamento;
 import equipamento.Escudo;
 import equipamento.Espada;
-import guerreiro.Bruxo;
+import guerreiro.*;
 
-public class BruxoBuilder implements BruxoInterface {
+public class BruxoEmFormacaoBuilder implements BruxoInterface {
 
 	private String nome;
 	private String sexo;
@@ -51,6 +51,6 @@ public class BruxoBuilder implements BruxoInterface {
 	}
 	
 	public Bruxo getBruxo() {
-		return new Bruxo(nome, sexo, equipamentoMaoDireita, equipamentoMaoEsquerda, ataqueTotal, colar);
+		return new BruxoEmFormacao(nome, sexo, equipamentoMaoDireita, equipamentoMaoEsquerda, ataqueTotal, colar);
 	}
 }

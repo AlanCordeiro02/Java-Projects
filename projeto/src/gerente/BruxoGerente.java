@@ -3,8 +3,7 @@ package gerente;
 import java.util.Scanner;
 import equipamento.*;
 
-import builder.BruxoBuilder;
-import builder.BruxoInterface;
+import builder.*;
 import guerreiro.Bruxo;
 
 public class BruxoGerente {
@@ -25,7 +24,7 @@ public class BruxoGerente {
 		criador.SetSexo(scan.next());
 		criador.SetEquipamentoMaoDireita(new Espada(10, 5));
 		criador.SetEquipamentoMaoEsquerda(new Escudo(0, 10));
-		criador.SetAtaque(BruxoBuilder.getAtaqueEquipamentoMaoDireita(), BruxoBuilder.getAtaqueEquipamentoMaoEsquerda());
+		criador.SetAtaque(BruxoEstudanteBuilder.getAtaqueEquipamentoMaoDireita(), BruxoEstudanteBuilder.getAtaqueEquipamentoMaoEsquerda());
 		criador.SetEquipamentoColar(new Colar());
 	}
 	
@@ -37,11 +36,11 @@ public class BruxoGerente {
 		criador.SetSexo(scan.next());
 		criador.SetEquipamentoMaoDireita(new Espada(10, 5));
 		criador.SetEquipamentoMaoEsquerda(new Espada(10, 5));
-		criador.SetAtaque(BruxoBuilder.getAtaqueEquipamentoMaoDireita(), BruxoBuilder.getAtaqueEquipamentoMaoEsquerda());
+		criador.SetAtaque(BruxoEmFormacaoBuilder.getAtaqueEquipamentoMaoDireita(), BruxoEmFormacaoBuilder.getAtaqueEquipamentoMaoEsquerda());
 		criador.SetEquipamentoColar(new Colar());
 	}
 	
-	public void getAltoBruxo() {
+	public void getBruxoAltoNivel() {
 		scan = new Scanner(System.in);
 		System.out.println("Informe o nome do bruxo: ");
 		criador.SetNome(scan.next());
@@ -49,7 +48,7 @@ public class BruxoGerente {
 		criador.SetSexo(scan.next());
 		criador.SetEquipamentoMaoDireita(new Espada(10, 5));
 		criador.SetEquipamentoMaoEsquerda(new Espada(0, 0));
-		criador.SetAtaque(BruxoBuilder.getAtaqueEquipamentoMaoDireita(), BruxoBuilder.getAtaqueEquipamentoMaoEsquerda());
+		criador.SetAtaque(BruxoAltoNivelBuilder.getAtaqueEquipamentoMaoDireita(), BruxoAltoNivelBuilder.getAtaqueEquipamentoMaoEsquerda());
 		criador.SetEquipamentoColar(new Colar());
 	}
 	
