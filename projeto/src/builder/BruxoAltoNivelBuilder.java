@@ -13,6 +13,7 @@ public class BruxoAltoNivelBuilder implements BruxoInterface {
 	private static Equipamento equipamentoMaoDireita;
 	private static Equipamento equipamentoMaoEsquerda;
 	private int ataqueTotal;
+	private int defesaTotal;
 	private Colar colar;
 	
 	public void SetNome(String nome) {
@@ -20,7 +21,13 @@ public class BruxoAltoNivelBuilder implements BruxoInterface {
 	}
 	
 	public void SetSexo(String sexo) {
-		this.sexo=sexo;
+		if(sexo.equalsIgnoreCase("m")) {
+			this.sexo="Masculino";
+		}
+		if(sexo.equalsIgnoreCase("F")) {
+			this.sexo="Feminino";
+		}
+		
 	}
 
 	public void SetEquipamentoMaoDireita(Equipamento equipamentoMaoDireita) {
@@ -45,12 +52,26 @@ public class BruxoAltoNivelBuilder implements BruxoInterface {
 		return equipamentoMaoEsquerda.getAtaque();
 	}
 	
-	public int SetAtaque(int ataqueEquipamentoMaoDireita, int ataqueEquipamentoMaoEsquerda) {
+	public static int getDefesaEquipamentoMaoDireita() {
+		return equipamentoMaoDireita.getDefesa();
+	}
+	
+	
+	public static int getDefesaEquipamentoMaoEsquerda() {
+		return equipamentoMaoEsquerda.getDefesa();
+	}
+	
+	public int ataqueTotal(int ataqueEquipamentoMaoDireita, int ataqueEquipamentoMaoEsquerda) {
 		this.ataqueTotal = ataqueEquipamentoMaoDireita + ataqueEquipamentoMaoEsquerda;
 		return ataqueTotal;
 	}
 	
+	public int defesaTotal(int defesaEquipamentoMaoDireita, int defesaEquipamentoMaoEsquerda) {
+		this.defesaTotal = defesaEquipamentoMaoDireita + defesaEquipamentoMaoEsquerda;
+		return defesaTotal;
+	}
+	
 	public Bruxo getBruxo() {
-		return new BruxoAltoNivel(nome, sexo, equipamentoMaoDireita, equipamentoMaoEsquerda, ataqueTotal, colar);
+		return new BruxoAltoNivel(nome, sexo, equipamentoMaoDireita, equipamentoMaoEsquerda, ataqueTotal, defesaTotal, colar);
 	}
 }

@@ -10,8 +10,7 @@ public class Aplicacao {
 		// TODO Auto-generated method stub
 		BruxoGerente gerente = new BruxoGerente();
 		
-		gerente.BruxoInterface(new BruxoAltoNivelBuilder());
-		gerente.getBruxoAltoNivel();
+		gerente.escolhaPersonagem();
 		
 		Bruxo bruxo = gerente.getBruxo();
 		
