@@ -11,7 +11,16 @@ public class Equipamento {
 		this.ataque=ataque;
 		this.defesa=defesa;
 	}
-	
+
+
+	public int getAtaque() {
+		return ataque;
+	}
+
+	public int getDefesa() {
+		return defesa;
+	}
+
 	public String infoEquipamento() {
 		return  "Tipo - "+tipo+", Ataque - " +ataque+ ", Defesa - "+defesa;
 	}

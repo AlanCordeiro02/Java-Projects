@@ -11,7 +11,7 @@ public class Aplicacao {
 		BruxoGerente gerente = new BruxoGerente();
 		
 		gerente.BruxoInterface(new BruxoBuilder());
-		gerente.getBruxoEmFormacao();
+		gerente.getBruxoEstudante();
 		
 		Bruxo bruxo = gerente.getBruxo();
 		

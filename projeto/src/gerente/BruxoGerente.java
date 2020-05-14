@@ -25,6 +25,8 @@ public class BruxoGerente {
 		criador.SetSexo(scan.next());
 		criador.SetEquipamentoMaoDireita(new Espada(10, 5));
 		criador.SetEquipamentoMaoEsquerda(new Escudo(0, 10));
+		criador.SetAtaque(BruxoBuilder.getAtaqueEquipamentoMaoDireita(), BruxoBuilder.getAtaqueEquipamentoMaoEsquerda());
+		criador.SetEquipamentoColar(new Colar());
 	}
 	
 	public void getBruxoEmFormacao() {
@@ -35,6 +37,8 @@ public class BruxoGerente {
 		criador.SetSexo(scan.next());
 		criador.SetEquipamentoMaoDireita(new Espada(10, 5));
 		criador.SetEquipamentoMaoEsquerda(new Espada(10, 5));
+		criador.SetAtaque(BruxoBuilder.getAtaqueEquipamentoMaoDireita(), BruxoBuilder.getAtaqueEquipamentoMaoEsquerda());
+		criador.SetEquipamentoColar(new Colar());
 	}
 	
 	public void getAltoBruxo() {
@@ -45,6 +49,8 @@ public class BruxoGerente {
 		criador.SetSexo(scan.next());
 		criador.SetEquipamentoMaoDireita(new Espada(10, 5));
 		criador.SetEquipamentoMaoEsquerda(new Espada(0, 0));
+		criador.SetAtaque(BruxoBuilder.getAtaqueEquipamentoMaoDireita(), BruxoBuilder.getAtaqueEquipamentoMaoEsquerda());
+		criador.SetEquipamentoColar(new Colar());
 	}
 	
 	public Bruxo getBruxo() {
