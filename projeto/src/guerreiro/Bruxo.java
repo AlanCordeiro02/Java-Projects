@@ -3,7 +3,7 @@ package guerreiro;
 import equipamento.Colar;
 import equipamento.Equipamento;
 
-public class Bruxo {
+public abstract class Bruxo {
 	private String nome;
 	private String sexo;
 	private Equipamento equipamentoMaoDireita;
@@ -21,6 +21,10 @@ public class Bruxo {
 		this.ataqueTotal=ataqueTotal;
 		this.defesaTotal=defesaTotal;
 		this.colar=colar;
+	}
+	
+	public String getNome() {
+		return nome;
 	}
 	
 	public String infoBruxo() {
