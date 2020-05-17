@@ -36,8 +36,6 @@ public class Aplicacao {
 			System.out.println("Bruxo - " +bruxo.getNome() +" X " +"Criatura - " +criatura.getClasse());
 		}
 		
-		
-	
 	
 	}
 
