@@ -24,9 +24,10 @@ public class BruxoEstudanteBuilder implements BruxoInterface {
 		if(sexo.equalsIgnoreCase("m")) {
 			this.sexo="Masculino";
 		}
-		if(sexo.equalsIgnoreCase("F")) {
+		else if(sexo.equalsIgnoreCase("F")) {
 			this.sexo="Feminino";
-		}
+		}else
+			this.sexo="ERRO";
 		
 	}
 
@@ -43,35 +44,9 @@ public class BruxoEstudanteBuilder implements BruxoInterface {
 	}
 	
 	
-	public static int getAtaqueEquipamentoMaoDireita() {
-		return equipamentoMaoDireita.getAtaque();
-	}
-	
-	
-	public static int getAtaqueEquipamentoMaoEsquerda() {
-		return equipamentoMaoEsquerda.getAtaque();
-	}
-	
-	public static int getDefesaEquipamentoMaoDireita() {
-		return equipamentoMaoDireita.getDefesa();
-	}
-	
-	
-	public static int getDefesaEquipamentoMaoEsquerda() {
-		return equipamentoMaoEsquerda.getDefesa();
-	}
-	
-	public int ataqueTotal(int ataqueEquipamentoMaoDireita, int ataqueEquipamentoMaoEsquerda) {
-		this.ataqueTotal = ataqueEquipamentoMaoDireita + ataqueEquipamentoMaoEsquerda;
-		return ataqueTotal;
-	}
-	
-	public int defesaTotal(int defesaEquipamentoMaoDireita, int defesaEquipamentoMaoEsquerda) {
-		this.defesaTotal = defesaEquipamentoMaoDireita + defesaEquipamentoMaoEsquerda;
-		return defesaTotal;
-	}
-	
 	public Bruxo getBruxo() {
+		ataqueTotal = equipamentoMaoDireita.getAtaque() + equipamentoMaoEsquerda.getAtaque();
+		defesaTotal = equipamentoMaoDireita.getDefesa() + equipamentoMaoEsquerda.getDefesa();
 		return new BruxoEstudante(nome, sexo, equipamentoMaoDireita, equipamentoMaoEsquerda, ataqueTotal, defesaTotal, colar);
 	}
 }

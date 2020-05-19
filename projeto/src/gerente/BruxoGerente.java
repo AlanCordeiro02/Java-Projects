@@ -49,8 +49,6 @@ public class BruxoGerente {
 		criador.SetSexo(scan.next());
 		criador.SetEquipamentoMaoDireita(new Espada(10, 5));
 		criador.SetEquipamentoMaoEsquerda(new Escudo(0, 10));
-		criador.ataqueTotal(BruxoEstudanteBuilder.getAtaqueEquipamentoMaoDireita(), BruxoEstudanteBuilder.getAtaqueEquipamentoMaoEsquerda());
-		criador.defesaTotal(BruxoEstudanteBuilder.getDefesaEquipamentoMaoDireita(), BruxoEstudanteBuilder.getDefesaEquipamentoMaoEsquerda());
 		criador.SetEquipamentoColar(new Colar());
 	}
 	
@@ -64,8 +62,6 @@ public class BruxoGerente {
 		criador.SetSexo(scan.next());
 		criador.SetEquipamentoMaoDireita(new Espada(10, 5));
 		criador.SetEquipamentoMaoEsquerda(new Espada(10, 5));
-		criador.ataqueTotal(BruxoEmFormacaoBuilder.getAtaqueEquipamentoMaoDireita(), BruxoEmFormacaoBuilder.getAtaqueEquipamentoMaoEsquerda());
-		criador.defesaTotal(BruxoEmFormacaoBuilder.getDefesaEquipamentoMaoDireita(), BruxoEmFormacaoBuilder.getDefesaEquipamentoMaoEsquerda());
 		criador.SetEquipamentoColar(new Colar());
 	}
 	
@@ -78,9 +74,6 @@ public class BruxoGerente {
 				"\nF - Feminino");
 		criador.SetSexo(scan.next());
 		criador.SetEquipamentoMaoDireita(new Espada(10, 5));
-		criador.SetEquipamentoMaoEsquerda(new Espada(0, 0));
-		criador.ataqueTotal(BruxoAltoNivelBuilder.getAtaqueEquipamentoMaoDireita(), BruxoAltoNivelBuilder.getAtaqueEquipamentoMaoEsquerda());
-		criador.defesaTotal(BruxoAltoNivelBuilder.getDefesaEquipamentoMaoDireita(), BruxoAltoNivelBuilder.getDefesaEquipamentoMaoEsquerda());
 		criador.SetEquipamentoColar(new Colar());
 	}
 	

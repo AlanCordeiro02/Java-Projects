@@ -2,8 +2,6 @@ package nucleo;
 
 import java.util.ArrayList;
 import java.util.Random;
-
-import arena.CampoDeBatalha;
 import fabricas.*;
 import builder.*;
 import criature.Criatura;

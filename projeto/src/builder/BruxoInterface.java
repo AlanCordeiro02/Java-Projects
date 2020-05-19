@@ -10,8 +10,6 @@ public interface BruxoInterface {
 	public void SetSexo(String sexo);
 	public void SetEquipamentoMaoDireita(Equipamento equipamentoMaoDireita);
 	public void SetEquipamentoMaoEsquerda(Equipamento equipamentoMaoEsquerda);
-	public int ataqueTotal(int ataqueEquipamentoMaoDireita, int ataqueEquipamentoMaoEsquerda);
-	public int defesaTotal(int defesaEquipamentoMaoDireita, int defesaEquipamentoMaoEsquerda);
 	public void SetEquipamentoColar(Colar colar);
 	public Bruxo getBruxo();
 }

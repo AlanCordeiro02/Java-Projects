@@ -28,6 +28,14 @@ public abstract class Bruxo {
 	}
 	
 	public String infoBruxo() {
+		if(equipamentoMaoEsquerda==null) {
+			return "Nome: " +nome+ 
+					"\nSexo: " +sexo+
+					"\nEquipamento Mão Direita: " +equipamentoMaoDireita.infoEquipamento()+
+					"\nAtaque Total: "+ataqueTotal+
+					"\nDefesa Total: "+defesaTotal+
+					"\nColar: "+colar;
+		}else {
 		return "Nome: " +nome+ 
 				"\nSexo: " +sexo+
 				"\nEquipamento Mão Direita: " +equipamentoMaoDireita.infoEquipamento()+
@@ -35,5 +43,6 @@ public abstract class Bruxo {
 				"\nAtaque Total: "+ataqueTotal+
 				"\nDefesa Total: "+defesaTotal+
 				"\nColar: "+colar;
+			}
 	}
 }
