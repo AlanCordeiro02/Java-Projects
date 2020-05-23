@@ -14,6 +14,7 @@ public class BruxoEstudanteBuilder implements BruxoInterface {
 	private static Equipamento equipamentoMaoEsquerda;
 	private int ataqueTotal;
 	private int defesaTotal;
+	private int energia = 100;
 	private Colar colar;
 	
 	public void SetNome(String nome) {
@@ -27,7 +28,7 @@ public class BruxoEstudanteBuilder implements BruxoInterface {
 		else if(sexo.equalsIgnoreCase("F")) {
 			this.sexo="Feminino";
 		}else
-			this.sexo="ERRO";
+			this.sexo="Indefinido";
 		
 	}
 
@@ -47,6 +48,6 @@ public class BruxoEstudanteBuilder implements BruxoInterface {
 	public Bruxo getBruxo() {
 		ataqueTotal = equipamentoMaoDireita.getAtaque() + equipamentoMaoEsquerda.getAtaque();
 		defesaTotal = equipamentoMaoDireita.getDefesa() + equipamentoMaoEsquerda.getDefesa();
-		return new BruxoEstudante(nome, sexo, equipamentoMaoDireita, equipamentoMaoEsquerda, ataqueTotal, defesaTotal, colar);
+		return new BruxoEstudante(nome, sexo, equipamentoMaoDireita, equipamentoMaoEsquerda, ataqueTotal, defesaTotal, energia, colar);
 	}
 }

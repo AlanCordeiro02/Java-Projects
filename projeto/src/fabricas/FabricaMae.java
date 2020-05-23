@@ -3,7 +3,6 @@ package fabricas;
 import criature.Criatura;
 
 public abstract class FabricaMae {
-
 	public static FabricaMae getAleatoryfactory(EnumFabricas tipo) {
 		switch(tipo) {
 		case Construtor:

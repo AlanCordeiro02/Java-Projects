@@ -41,11 +41,20 @@ public class BruxoGerente {
 	
 	public void getBruxoEstudante() {
 		scan = new Scanner(System.in);
+		String sexo;
 		System.out.println("Informe o nome do bruxo(a): ");
 		criador.SetNome(scan.next());
-		System.out.println("Informe o sexo do bruxo(a)"+
-				"\nM - Masculino"+
-				"\nF - Feminino");
+		do {	
+			System.out.println("Informe o sexo do bruxo(a)"+
+					"\nM - Masculino"+
+					"\nF - Feminino");
+			sexo = scan.next();
+			if(sexo.equalsIgnoreCase("m")) {
+				criador.SetSexo(sexo);
+			}else if(sexo.equalsIgnoreCase("f")) {
+				criador.SetSexo(sexo);	
+			}
+		}while(!(sexo.equalsIgnoreCase("m") || sexo.equalsIgnoreCase("f")));
 		criador.SetSexo(scan.next());
 		criador.SetEquipamentoMaoDireita(new Espada(10, 5));
 		criador.SetEquipamentoMaoEsquerda(new Escudo(0, 10));
@@ -54,24 +63,44 @@ public class BruxoGerente {
 	
 	public void getBruxoEmFormacao() {
 		scan = new Scanner(System.in);
+		String sexo;
 		System.out.println("Informe o nome do bruxo(a): ");
 		criador.SetNome(scan.next());
-		System.out.println("Informe o sexo do bruxo(a)"+
-				"\nM - Masculino"+
-				"\nF - Feminino");
-		criador.SetSexo(scan.next());
+		do {	
+			System.out.println("Informe o sexo do bruxo(a)"+
+					"\nM - Masculino"+
+					"\nF - Feminino");
+			sexo = scan.next();
+			if(sexo.equalsIgnoreCase("m")) {
+				criador.SetSexo(sexo);
+			}else if(sexo.equalsIgnoreCase("f")) {
+				criador.SetSexo(sexo);
+				
+			}
+		}while(!(sexo.equalsIgnoreCase("m") || sexo.equalsIgnoreCase("f")));	
 		criador.SetEquipamentoMaoDireita(new Espada(10, 5));
 		criador.SetEquipamentoMaoEsquerda(new Espada(10, 5));
 		criador.SetEquipamentoColar(new Colar());
 	}
 	
 	public void getBruxoAltoNivel() {
+		String sexo;
 		scan = new Scanner(System.in);
 		System.out.println("Informe o nome do bruxo(a): ");
 		criador.SetNome(scan.next());
-		System.out.println("Informe o sexo do bruxo(a)"+
-				"\nM - Masculino"+
-				"\nF - Feminino");
+		do {	
+			System.out.println("Informe o sexo do bruxo(a)"+
+					"\nM - Masculino"+
+					"\nF - Feminino");
+			sexo = scan.next();
+			if(sexo.equalsIgnoreCase("m")) {
+				criador.SetSexo(sexo);
+			}else if(sexo.equalsIgnoreCase("f")) {
+				criador.SetSexo(sexo);
+				
+			}
+		}while(!(sexo.equalsIgnoreCase("m") || sexo.equalsIgnoreCase("f")));
+		
 		criador.SetSexo(scan.next());
 		criador.SetEquipamentoMaoDireita(new Espada(10, 5));
 		criador.SetEquipamentoColar(new Colar());

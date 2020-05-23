@@ -14,6 +14,7 @@ public class BruxoAltoNivelBuilder implements BruxoInterface {
 	private static Equipamento equipamentoMaoEsquerda = null;
 	private int ataqueTotal;
 	private int defesaTotal;
+	private int energia = 100;
 	private Colar colar;
 	
 	public void SetNome(String nome) {
@@ -26,8 +27,9 @@ public class BruxoAltoNivelBuilder implements BruxoInterface {
 			}
 			else if(sexo.equalsIgnoreCase("F")) {
 				this.sexo="Feminino";
-			}else
-				this.sexo="ERRO";
+			}else {
+				this.sexo="Indefinido";
+			}
 		
 	}
 
@@ -47,6 +49,6 @@ public class BruxoAltoNivelBuilder implements BruxoInterface {
 	public Bruxo getBruxo() {
 		ataqueTotal = equipamentoMaoDireita.getAtaque();
 		defesaTotal = equipamentoMaoDireita.getDefesa();
-		return new BruxoAltoNivel(nome, sexo, equipamentoMaoDireita, equipamentoMaoEsquerda, ataqueTotal, defesaTotal, colar);
+		return new BruxoAltoNivel(nome, sexo, equipamentoMaoDireita, equipamentoMaoEsquerda, ataqueTotal, defesaTotal, energia, colar);
 	}
 }
