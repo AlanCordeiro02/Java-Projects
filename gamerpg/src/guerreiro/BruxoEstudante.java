@@ -28,5 +28,4 @@ public class BruxoEstudante extends Bruxo {
 		}
 
 	}
-
 }

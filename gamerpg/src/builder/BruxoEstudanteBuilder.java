@@ -51,8 +51,6 @@ public class BruxoEstudanteBuilder implements BruxoInterface {
 		this.colar=colar;
 	}
 	
-	
-	
 	public Bruxo getBruxo() {
 		double somaAtk = equipamentoMaoDireita.getAtaque() + equipamentoMaoEsquerda.getAtaque(); 
 		ataqueTotal = somaAtk + (somaAtk * colar.statusColar());

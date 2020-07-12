@@ -27,9 +27,8 @@ public class FabricaRelictio extends FabricaMae {
 			return new Dopllers("Dopllers / Humanóide com Chifres", 10, 7, 30, "Fazendas");
 
 		default:
-			break;
+			return null;
 		}
-		return null;
 	}
 
 	@Override

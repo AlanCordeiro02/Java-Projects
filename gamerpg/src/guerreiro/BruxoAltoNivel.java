@@ -30,5 +30,4 @@ public class BruxoAltoNivel extends Bruxo {
 		}
 
 	}
-
 }

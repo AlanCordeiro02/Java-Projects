@@ -14,8 +14,8 @@ public abstract class FabricaTerreno {
 			return new Campo();
 		case Floresta:
 			return new Floresta();
+		default:
+			return null;
 		}
-		return null;
 	}
-
 }

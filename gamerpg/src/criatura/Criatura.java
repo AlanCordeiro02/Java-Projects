@@ -19,7 +19,7 @@ public abstract class Criatura {
 		this.terreno = terreno;
 	}
 
-	public double getFator() {
+	private double getFator() {
 		Random random = new Random();
 		double fatorRandom = random.nextInt(10);
 		while ((fatorRandom / 10) < 0.5) {

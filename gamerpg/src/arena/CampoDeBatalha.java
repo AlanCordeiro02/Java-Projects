@@ -18,10 +18,11 @@ public class CampoDeBatalha {
 	private int criaturasDerrotadas = 0;
 	private int nivel = 0;
 	private EnumTerreno[] terrenos = new EnumTerreno[5];
+	private Scanner scan;
 
-	private static int ataqueBruxo() {
+	private int ataqueBruxo() {
 
-		Scanner scan = new Scanner(System.in);
+		scan = new Scanner(System.in);
 		System.out.println("Escolha seu ataque: ");
 		System.out.println("(1) - Ataque normal: ");
 		System.out.println("(2) - Ataque com Sinal: ");
@@ -29,7 +30,7 @@ public class CampoDeBatalha {
 		return scan.nextInt();
 	}
 
-	private static void exibeEnergia(double energiaCriatura, double energiaBruxo) {
+	private void exibeEnergia(double energiaCriatura, double energiaBruxo) {
 		System.out.println("-----------------------------");
 		System.out.println("Energia do Bruxo: " + energiaBruxo);
 		System.out.println("-----------------------------");

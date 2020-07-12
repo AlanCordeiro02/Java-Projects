@@ -26,10 +26,8 @@ public class FabricaInsectoide extends FabricaMae{
 			case Aracnos:
 				return new Aracnos ("Aracnos / Insectoide", 11, 8, 30, "Pântano");
 		default:
-			break;
+			return null;
 		}
-		
-		return null;
 	}
 	
 	

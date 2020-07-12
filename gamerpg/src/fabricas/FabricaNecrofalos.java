@@ -27,10 +27,8 @@ public class FabricaNecrofalos extends FabricaMae {
 			return new Nevolosos("Nevolosos / Necrófago", 12, 7, 40, "Cemitério");
 
 		default:
-			break;
+			return null;
 		}
-
-		return null;
 	}
 
 	@Override

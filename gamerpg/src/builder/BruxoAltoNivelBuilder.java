@@ -51,10 +51,6 @@ public class BruxoAltoNivelBuilder implements BruxoInterface {
 		this.colar = colar;
 	}
 
-	// public void usarColar() {
-	// energia = energia + colar.statusColar();
-	// }
-
 	public Bruxo getBruxo() {
 		ataqueTotal = equipamentoMaoDireita.getAtaque();
 		defesaTotal = equipamentoMaoDireita.getDefesa();

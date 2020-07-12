@@ -2,9 +2,9 @@ package equipamento;
 
 public abstract class Equipamento {
 
-	protected String tipo;
-	protected int ataque;
-	protected int defesa;
+	private String tipo;
+	private int ataque;
+	private int defesa;
 
 	public Equipamento(String tipo, int ataque, int defesa) {
 		this.tipo = tipo;

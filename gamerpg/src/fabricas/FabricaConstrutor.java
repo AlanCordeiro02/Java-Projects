@@ -28,10 +28,8 @@ public class FabricaConstrutor extends FabricaMae {
 			return new Golem("Gargula / Gênio", 10, 8, 40, "Não possui um terreno");
 
 		default:
-			break;
-
+			return null;
 		}
-		return null;
 	}
 
 	@Override

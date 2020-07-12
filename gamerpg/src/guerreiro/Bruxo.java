@@ -33,7 +33,7 @@ public abstract class Bruxo {
 		this.sinal2 = sinal2;
 	}
 
-	public double getFator() {
+	private double getFator() {
 		Random random = new Random();
 		double fatorRandom = random.nextInt(10);
 		while ((fatorRandom / 10) < 0.5) {

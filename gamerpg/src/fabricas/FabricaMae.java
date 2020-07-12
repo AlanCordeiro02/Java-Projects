@@ -3,16 +3,6 @@ package fabricas;
 import criatura.Criatura;
 
 public abstract class FabricaMae {
-	protected static int nInstance = 0;
-	
-	public FabricaMae() {
-		nInstance++;
-	}
-	
-	public static int getNumberInstance() {
-		return nInstance;
-	}
-	
 	
 	public static FabricaMae getAleatoryfactory(EnumFabricas tipo) {
 		switch(tipo) {
@@ -25,10 +15,9 @@ public abstract class FabricaMae {
 		case Relictio:
 			return new FabricaInsectoide();
 		
-		
+		default:
+			return null;
 		}
-		return null;
-		
 	}
 
 public abstract Criatura getCriatura(EnumMonstros tipo);
